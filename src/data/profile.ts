@@ -4,8 +4,7 @@ export const profile = {
   location: "Chihuahua, Chihuahua, México",
   email: "vargas192u9@gmail.com",
   github: "https://github.com/vargas192u9-maker",
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  cvPath: "/CV_Gustavo_Vargas.pdf",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL?.trim() || "http://localhost:3000",  cvPath: "/CV_Gustavo_Vargas.pdf",
   intro:
     "Transformo ideas en soluciones digitales. Me apasiona desarrollar aplicaciones web, aplicaciones Android y sistemas informáticos, combinando programación, creatividad y aprendizaje constante.",
   rotating: ["Desarrollo Web", "Aplicaciones Android", "Sistemas Informáticos", "Desarrollo de Software"],
