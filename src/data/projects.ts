@@ -11,6 +11,7 @@ export const projects: Project[] = [
   {
     slug: "lexora", name: "Lexora", category: "Aplicaciones Android", label: "Aplicación Android", status: "Finalizado",
     tech: ["Java", "XML", "SQL", "Autenticación con Google"],
+    screenshots: ["/projects/lexora/inicio.jpeg", "/projects/lexora/biblioteca.jpeg", "/projects/lexora/crear-historia.jpeg"],
     summary: "Aplicación móvil de biblioteca y lectura digital para importar, organizar y leer PDF y EPUB.",
     description: [
       "Lexora es una aplicación móvil de biblioteca y lectura digital diseñada para que los usuarios puedan disfrutar sus libros de manera personalizada.",
@@ -20,10 +21,14 @@ export const projects: Project[] = [
     problem: "Reunir en una sola aplicación la biblioteca personal de documentos y libros digitales, con lectura continua y anotaciones.",
     objectives: ["Importar y organizar documentos PDF y EPUB", "Permitir retomar la lectura donde se dejó", "Guardar anotaciones e ideas importantes"],
     participation: ["Desarrollé la aplicación móvil de biblioteca y lectura digital.", "Implementé la continuación de lectura, la personalización de la experiencia y el guardado de anotaciones.", "Integré el inicio de sesión con Google y el almacenamiento de datos con SQL."],
+    challenges: ["Recuperar la extracción y visualización correcta del texto de las historias, manteniendo una lectura fluida.", "Mostrar el formato del contenido sin revelar las etiquetas HTML."],
+    solutions: ["Ajusté el tratamiento del contenido para conservar el formato de las historias y evitar que las etiquetas HTML aparezcan en pantalla."],
+    learnings: ["Aprendí a proteger los datos, conservar las funciones importantes de la aplicación y probar cada cambio para asegurar que la lectura siga funcionando correctamente."],
   },
   {
     slug: "noellas-floral", name: "Nöella's Floral", category: "Desarrollo Web", label: "Desarrollo Web", status: "Finalizado y publicado",
     tech: ["HTML", "CSS", "JavaScript"], site: "https://noellasfloral.com",
+    screenshots: ["/projects/noellas-floral/inicio.png", "/projects/noellas-floral/catalogo.png", "/projects/noellas-floral/nosotros.png"],
     summary: "Sitio web y catálogo digital para una florería boutique de Chihuahua, publicado en línea.",
     description: [
       "Nöella's Floral es un sitio web y catálogo digital desarrollado para una florería boutique ubicada en Chihuahua.",
@@ -34,6 +39,9 @@ export const projects: Project[] = [
     problem: "Dar a una florería boutique un espacio en línea para mostrar sus arreglos y recibir solicitudes de pedidos.",
     objectives: ["Presentar los arreglos florales en un catálogo digital", "Facilitar la solicitud de pedidos", "Transmitir una identidad romántica y elegante en cualquier dispositivo"],
     participation: ["Desarrollé el sitio web y catálogo digital; es un proyecto real, publicado y en línea.", "Diseñé una experiencia para explorar arreglos florales, consultar sus detalles y facilitar la solicitud de pedidos."],
+    challenges: ["Crear un catálogo web dinámico y funcional sin depender de un backend complejo, garantizando una navegación fluida y un flujo de compra rápido desde el navegador hasta la confirmación del pedido."],
+    solutions: ["Desarrollé el sitio en HTML, CSS y JavaScript, ejecutado en un entorno Node.js. Integré la generación automática de folios basados en la fecha y plantillas dinámicas de texto para enviar el pedido estructurado directamente a WhatsApp."],
+    learnings: ["Profundicé en el despliegue de sitios web, el manejo de variables dinámicas en el frontend y la optimización de la conversión entre cliente y negocio mediante herramientas de mensajería directa."],
   },
   {
     slug: "mailbox", name: "MailBox", category: "Sistemas Informáticos", label: "Sistema web · Proyecto académico", status: "Finalizado, no publicado",
@@ -48,5 +56,8 @@ export const projects: Project[] = [
     problem: "Mejorar la comunicación entre estudiantes y departamentos institucionales, permitiendo opinar sin revelar la identidad.",
     objectives: ["Permitir mensajes anónimos", "Enviar cada mensaje solo al departamento correspondiente", "Orientar al usuario con un chatbot"],
     participation: ["Desarrollé un sistema de buzón escolar anónimo para quejas, sugerencias y comentarios.", "Canalicé los mensajes exclusivamente a los departamentos correspondientes e incluí un chatbot de orientación.", "Construí interfaces diferenciadas para estudiantes y personal autorizado."],
+    challenges: ["Implementar un lector digital en Android Studio capaz de procesar e interpretar archivos PDF y EPUB, gestionar el renderizado del texto y el ajuste de márgenes, y responder a gestos de pantalla en tiempo real."],
+    solutions: ["Desarrollé una arquitectura en Java con eventos táctiles para el zoom adaptativo, vistas condicionales para alternar modos de lectura y un motor de maquetación que ajusta el contenido al tamaño del dispositivo y permite cargar historias personalizadas."],
+    learnings: ["Profundicé en el desarrollo nativo para Android, la gestión de memoria e hilos al cargar archivos pesados y el diseño de interfaces móviles enfocadas en la experiencia de usuario."],
   },
 ];
